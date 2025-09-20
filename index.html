@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(245, 208, 78);
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: min-content;
+        padding: 20px;
+        box-shadow: 10px 10px black;
+      }
+
+      .article_illustration {
+        margin-bottom: 20px;
+        border-radius: 15px;
+      }
+
+      .catogery {
+        background-color: rgb(245, 206, 82);
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: fit-content;
+        font-weight: bold;
+      }
+
+      .date {
+        font-size: 0.75rem;
+      }
+
+      .description {
+        color: rgb(72, 71, 71);
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+        margin-top: 20px;
+      }
+
+      .author_image {
+        width: 40px;
+        height: 40px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          class="article_illustration"
+          src="assets/images/illustration-article.svg"
+          alt="article_illustration"
+        />
+        <div class="catogery">Learning</div>
+        <p class="date">Published 21 Dec 2023</p>
+
+        <h3>HTML & CSS foundations</h3>
+
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+
+        <div class="author">
+          <img
+            class="author_image"
+            src="assets/images/image-avatar.webp"
+            alt="authoe_image"
+          />
+          <h4 class="author_name">Greg Hooper</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
